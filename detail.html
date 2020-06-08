@@ -67,13 +67,13 @@
   </a>
 </div>
 <!-- end slide -->
-<!-- list product -->
+
 
 
 	</div>
 </div>
     <div class="container">
-        <h1>Detail of product</h1>
+        <h1>Chi tiết sản phẩm:</h1>
 
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row no-gutters">
@@ -82,15 +82,19 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title" id="product-name">Card title</h5>
+                        <h5 class="card-title" id="product-name" >Card title</h5>
                         <h6 class="text-primary font-weight-bold"><span id="product-price"></span>đ</h6>
-                        <h6 class="" id="product-brand"></h6>
-                        </p>
+                        <h6 class="card-description" id="product-description"></h6>
+                        <button class="buy-now" style="background: #33CCFF; border-radius: 4px;" ><a href="" style="color: white; text-decoration: none;" >BUY NOW</a>
+                        <!-- <button class="btn btn-link" onclick="showDetail(${product.id})" style="background: #33CCFF; color: white; text-decoration: none; border-radius: 4px;" >Mua hàng</button> -->
+                          
+                        </button>
+                       
                     </div>
                 </div>
             </div>
         </div>
-        <button class="btn btn-link" onclick="goBack()">back</button>
+        <button class="btn btn-link" onclick="goBack()" style="text-decoration: none;" style="font-weight: bold;" >Back</button>
     </div>
 
     <script src="detail.js"></script>

@@ -66,10 +66,10 @@
 </div>
 <!-- end slide -->
 <!-- list product -->
-<div class="container">
+<!-- <div class="container">
 	<div class="row mt-5">
-		<!-- Thời trang nữ -->
-		<h2 class="list-product-title">Thời trang nữ:</h2>
+		<!- Thời trang nữ -->
+		<!-- <h2 class="list-product-title">Thời trang nữ:</h2>
 		<div class="product-group-woman">
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-12">
@@ -79,7 +79,8 @@
 					    <h5 class="card-title">Thời trang nữ</h5>
 						<p class="card-text">Áo nữ HeraGD tay ngắn màu hồng</p>
 						<p class="price">284.000đ</p>
-					    <a href="#" class="btn btn-primary">Chi tiết</a>
+						<!- <a href="#" class="btn btn-primary">Chi tiết</a> -->
+						<!-- <button class="btn btn-link" onclick="showDetail(${product.id})">Chi Tiết</button>
 					  </div>
 					</div>
 				</div>
@@ -117,9 +118,9 @@
 					</div>
 				</div>				
 			</div>
-		</div>
+		</div> --> 
 		<!-- thời trang nam -->
-		<h2 class="list-product-title">Thời trang nam:</h2>
+		<!-- <h2 class="list-product-title">Thời trang nam:</h2>
 		<div class="product-group-man">
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-12">
@@ -162,7 +163,8 @@
 					    <h5 class="card-title">Thời trang nam</h5>
 					    <p class="card-text">Áo sơ mi kẻ caro</p>
 					    <p class="price">349.000đ</p>
-					    <a href="#" class="btn btn-primary">Chi tiết</a>
+						<a href="#" class="btn btn-primary">Chi tiết</a>
+						<button class="btn btn-link" onclick="showDetail(${product.id})" style="background: rgb(216, 118, 195); color: white; text-decoration: none; border-radius: 4px;" >Chi tiết</button>
 					  </div>
 					</div>
 				</div>				
@@ -170,7 +172,31 @@
 		</div>
 
 	</div>
+</div> -->
+<div class="container">
+	<div class="row mt-5">	
+		<h2 class="list-product-title">Sản phẩm nổi bật:</h2>
+			<div class="container">
+				<table class="table table-borderless">
+					<thead>
+						<tr>
+							<th>Ảnh</th>
+							<th>Tên</th>
+							<th>Mô tả</th>
+							<th>Giá</th>
+							<th>Chi tiết</th>
+						</tr>
+					</thead>
+					<tbody id="product-group">
+						
+					</tbody>
+
+				</table>
+			</div>
+	</div>
 </div>
+
+
 
 <!-- end list product -->
 <script src="index.js"></script>

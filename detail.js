@@ -16,7 +16,7 @@ if(product){
     document.getElementById('product-img').src = product.img;
     document.getElementById('product-name').innerHTML = product.name;
     document.getElementById('product-price').innerHTML = product.price;
-    
+    document.getElementById('product-description').innerHTML = product.description;
 }
 
 function goBack(){
