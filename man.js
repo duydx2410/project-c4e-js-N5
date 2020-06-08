@@ -121,14 +121,15 @@ let tbody = document.getElementById('product-group-man');
                         <td>${product.description}</td>
                         <td>${product.price}đ</td>
                         <td>
-                        <button class="btn btn-link" onclick="showDetail(${product.id})" style="background: #33CCFF; color: white; text-decoration: none; border-radius: 4px;" >Chi tiết</button>
+                        <button class="btn btn-link" onclick="showDetail(${product.id})" style="background: #33CCFF; color: white; text-decoration: none; border-radius: 4px;" >Mua</button>
                         </td>
+                        
                     </tr>`;
         
         tbody.innerHTML += html;
         }
-    }
-showProducts(listDataProduct);
+    };
+
 
 function showDetail(id){
     //1: save productId selected
