@@ -14,7 +14,7 @@ let listDataProduct = [
     },
     {
         id: 2,
-        name: 'Áo sơ mi ngắn tay trơn',
+        name: 'Áo sơ mi nam ngắn tay trơn',
         price: 499e3 ,
         img: 'https://canifa.s3.amazonaws.com/media/catalog/product/8/t/8th20s018-se003-m.jpg',
         description: `<ul>
@@ -27,7 +27,7 @@ let listDataProduct = [
     },
     {
         id: 3,
-        name: 'Áo kiểu H:CONNECT cổ trụ tay lỡ bo thun màu xanh ngọc',
+        name: 'Áo nữ kiểu H:CONNECT cổ trụ tay lỡ bo thun màu xanh ngọc',
         price: 299e3 ,
         img: 'https://salegiagoc.com/wp-content/uploads/2018/12/16315887058974-600x866.jpg',
         description: `<ul>
@@ -53,7 +53,7 @@ let listDataProduct = [
     },
     { 
         id: 5,
-        name: 'Áo kiểu H:CONNECT cổ thắt dây nơ họa tiết hoa',
+        name: 'Áo nữ kiểu H:CONNECT cổ thắt dây nơ họa tiết hoa',
         price: 299e3 ,
         img: 'https://salegiagoc.com/wp-content/uploads/2018/12/16314939670558-600x866.jpg',
         description: `<ul>
@@ -66,7 +66,7 @@ let listDataProduct = [
     },
     {
         id: 6,
-        name: 'Áo sơ mi ngắn tay kẻ caro',
+        name: 'Áo sơ mi nam ngắn tay kẻ caro',
         price: 349e3 ,
         img: 'https://canifa.s3.amazonaws.com/media/catalog/product/8/t/8th20a004-cg068-m.jpg',
         description: `<ul>
@@ -92,7 +92,7 @@ let listDataProduct = [
     },
     {
         id:8,
-        name: 'Áo kiểu tay lỡ The One Fashion màu đen',
+        name: 'Áo nữ kiểu tay lỡ The One Fashion màu đen',
         price: 168e3 ,
         img: 'https://salegiagoc.com/wp-content/uploads/2018/12/13067119853598-600x866.jpg',
         description: `<ul>
@@ -104,7 +104,7 @@ let listDataProduct = [
         gender: "Thời trang Nữ",
     }  
 ];
-
+function showProducts(listDataProduct){
 let tbody = document.getElementById('product-group');
     tbody.innerHTML = '';
 
@@ -129,7 +129,9 @@ let tbody = document.getElementById('product-group');
     
         tbody.innerHTML += html;
         
-    };
+    }
+}
+showProducts(listDataProduct);
 
 function showDetail(id){
     //1: save productId selected
@@ -139,11 +141,17 @@ function showDetail(id){
     window.location.href = 'detail.html';
 }
 
-// thêm sản phẩm vào giỏ hàng
-function addCart(id) {
-    localStorage.setItem('selectedProductId', id);
-    localStorage.setItem('products', JSON.stringify(listDataProduct));
+function search() {
+    let sName = document.getElementById('search-product-name').value;
+    let result = [];
+    result = listDataProduct.filter(function (value){
+        return (sName.trim() !== '' && value.name.toLowerCase().includes(sName.toLowerCase()))
+    });
+    console.log(result);
+    
+    showProducts(result)
 
-    window.location.href = 'cart.html';
 }
+
+
 

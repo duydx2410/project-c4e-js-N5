@@ -10,10 +10,11 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 </head>
-<body class="container">
+<body class="container-n5">
+
 <!-- menu -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
+  
 	  <a class="navbar-brand" href="index.html"><img src="bootstrap/img/logo-2020-11.png" width="150" alt="N5-Shop"></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -30,16 +31,16 @@
 		  <li class="nav-item">
 	        <a class="nav-link" href="woman.html">Thời trang nữ</a>
 	      </li>
-	      <li class="nav-item dropdown">
+	      <!-- <li class="nav-item dropdown">
 	        <a class="nav-link" href="cart.html" id="navbarDropdown" >
 	          Checkout</a>
-	    	</li>
+	    	</li> -->
 	    </ul>
 	    <form class="form-inline my-2 my-lg-0">
-	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	      <input class="form-control mr-sm-2"  id="search-product-name" type="search" placeholder="Search" aria-label="Search">
+		  <button type="button" onclick="search()" class="btn btn-primary">Search</button>
 	    </form>
-	  </div>
+	 
   </div>
 </nav>
 <!-- end menu -->
@@ -179,10 +180,9 @@
 </div> -->
 
 
-<div class="container">
 	<div class="row mt-5">	
 		<h2 class="list-product-title">Sản phẩm nổi bật:</h2>
-			<div class="container">
+			
 				<table class="table table-borderless">
 					<thead>
 						<tr>
@@ -199,8 +199,8 @@
 					</tbody>
 
 				</table>
-			</div>
-	</div>
+			
+	
 </div>
 
 

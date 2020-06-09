@@ -3,9 +3,10 @@
 	padding: 0;
 
 }
-.container{
+
+.container-n5{
 	/* border: 1px solid black; */
-	width: 70%;
+	width: 80%;
 	margin: auto;
     padding: 12px 10px;
 	
@@ -14,6 +15,7 @@
 .dropdown{
 	position: relative;
 	display: inline-block;
+	;
 }
 .dropdown-content{
 	display: none;
