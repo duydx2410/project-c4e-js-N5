@@ -141,6 +141,13 @@ function showDetail(id){
     window.location.href = 'detail.html';
 }
 
+function submit(event) {
+    if(event.key === "Enter"){
+        search();
+    }
+    
+}
+
 function search() {
     let sName = document.getElementById('search-product-name').value;
     let result = [];
@@ -152,6 +159,7 @@ function search() {
     showProducts(result)
 
 }
+
 
 
 
